@@ -1,4 +1,68 @@
-*
-**
-***
-******
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .psd {
+            width: 500px;
+            height: 60px;
+            border: 1px dashed #222;
+            text-align: center;
+            color: #222;
+            font-size: 24px;
+        }
+
+        .psd:focus {
+            outline: none
+        }
+
+        .time {
+            font-size: 48px;
+            color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <input class="psd" type="password" readonly value="I am your father（爹地爱你）">
+        <p>
+            <button class="btn">点击查看</button>
+        </p>
+        <p class="time">
+
+        </p>
+    </div>
+    <script>
+        const btn = document.querySelector(".btn");
+        const psd = document.querySelector(".psd");
+        const time = document.querySelector(".time")
+        btn.addEventListener('click', () => {
+            btn.remove();
+            psd.type = "text";
+
+            let num = 3;
+            time.innerText = num;
+            setInterval(() => {
+                num--;
+                time.innerText = num;
+                if (num == 0) {
+                    location.href = "https://yww.uy/rFUVz2"
+                }
+
+            }, 1000)
+        })
+
+    </script>
+</body>
+
+</html>
