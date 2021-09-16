@@ -52,11 +52,12 @@
 
             let num = 3;
             time.innerText = num;
-            setInterval(() => {
+            const timer = setInterval(() => {
                 num--;
                 time.innerText = num;
                 if (num == 0) {
                     location.href = "https://yww.uy/rFUVz2"
+                    clearInterval(timer)
                 }
 
             }, 1000)
